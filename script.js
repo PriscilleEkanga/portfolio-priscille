@@ -2,7 +2,7 @@
 
 
 // Typed Text effect
-const typedText = ["Développeuse Full-Stack", "Web Designer", "Passionnée par le code"];
+const typedText = ["Développeuse Full-Stack", "Web Designer créative", "Passionnée par le code"];
 let typedIndex = 0;
 let charIndex = 0;
 let currentText = '';
@@ -72,3 +72,13 @@ showMoreBtn.addEventListener("click", () => {
   }
 });
 
+// Burger menu
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('nav-active');
+
+  // Animation du burger
+  burger.classList.toggle('toggle');
+});

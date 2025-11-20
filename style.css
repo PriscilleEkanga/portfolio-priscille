@@ -48,6 +48,58 @@ nav ul li a:hover {
   color: #ff4da6;
 }
 
+/* Burger menu (mobile/tablette) */
+.burger {
+  display: none; /* par défaut caché */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Affichage mobile / tablette */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(27, 10, 42, 0.95);
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 100px;
+  }
+
+  nav ul.nav-active {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+.burger.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+  opacity: 0;
+}
+
+.burger.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Hero */
 .hero {
   height: 100vh;
@@ -75,7 +127,9 @@ nav ul li a:hover {
   height: 100%;
   background-color: rgba(27,10,42,0.6); /* teinte sombre + transparence */
   z-index: 1;
+  pointer-events: none; /* Permet aux clics de passer à travers */
 }
+
 
 .hero-content {
   position: relative;
@@ -85,7 +139,7 @@ nav ul li a:hover {
 
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1.2; /* espace vertical suffisant */
   max-width: 800px; /* limite largeur pour ne pas dépasser l'écran */
   margin: 0 auto;
@@ -96,8 +150,7 @@ nav ul li a:hover {
 
 /* Si tu veux que le texte s'adapte sur mobile */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
+  .hero-content h1 { 
     white-space: normal; /* permet le passage à la ligne */
   }
 }
@@ -186,6 +239,16 @@ nav ul li a:hover {
   animation: fadeInUp 1s forwards;
   animation-delay: 0.3s;
 }
+
+.about-text .btn {
+  margin-top: 20px;
+  background-color: #ff4da6;
+}
+
+.about-text .btn:hover {
+  background-color: #6f1a75;
+}
+
 
 /* Animation du texte */
 @keyframes fadeInUp {
