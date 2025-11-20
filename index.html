@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priscille Grace - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+   <section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Bonjour, je suis <span class="typed"></span></h1>
+    <p>Développeuse Full-Stack & Web Designer</p>
+    <a href="#projects" class="btn">Voir mes projets</a>
+  </div>
+</section>
+
+
+  </section>
+
+  <!-- About / Qui suis-je -->
+  <section id="about" class="about">
+  <div class="about-container">
+    <div class="about-img-container">
+      <img src="profil-pf.png" alt="Priscille Grace" class="about-img">
+    </div>
+    <div class="about-text">
+      <h2>Qui suis-je ?</h2>
+      <p>Je suis Priscille Grace, étudiante en développement web full-stack. Passionnée par le design et les technologies web, je crée des projets dynamiques et modernes qui allient esthétique et fonctionnalité.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills / Compétences -->
+  <section id="skills" class="skills">
+    <h2>Mes compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">PHP</div>
+      <div class="skill-card">MySQL</div>
+    </div>
+  </section>
+
+  <!-- Projects / Projets -->
+  <section id="projects" class="projects">
+  <h2>Mes projets</h2>
+  <div class="projects-grid">
+    <!-- Projets visibles -->
+    <div class="project-card animate">
+      <a href="https://kak-oil.netlify.app/" target="_blank">
+        <img src="image-kakoil.png" alt="Projet 1">
+        <div class="project-overlay">
+          <h3>Kak'oil</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+      </a>
+    </div>
+    <div class="project-card animate">
+      <a href="https://booki-hebergement.netlify.app/" target="_blank">
+        <img src="image-booki.png" alt="Projet 2">
+        <div class="project-overlay">
+          <h3>Booki</h3>
+          <p>HTML, CSS, javascript</p>
+        </div>
+      </a>
+    </div>
+    <div class="project-card animate">
+      <a href="https://todolist-priscille.netlify.app/" target="_blank">
+        <img src="image-todo-list.png" alt="Projet 3">
+        <div class="project-overlay">
+          <h3>Todo list</h3>
+          <p>React,JavaScript, PHP</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Projets supplémentaires cachés -->
+    
+      <!-- ajoute d'autres projets ici -->
+    </div>
+  </div>
+
+  <!-- Bouton afficher plus -->
+  <div class="show-more">
+    <button id="show-more-btn" class="btn">Afficher plus de projets</button>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form">
+  <input type="text" name="name" placeholder="Votre nom" required>
+  <input type="email" name="email" placeholder="Votre email" required>
+  <textarea name="message" placeholder="Votre message" required></textarea>
+  <button type="submit" class="btn">Envoyer</button>
+</form>
+
+    <div class="socials">
+  <a href="https://www.linkedin.com/in/priscille-ekanga-ab24aa333/" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/PriscilleEkanga" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.instagram.com/priscille__ekanga/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Priscille Grace. Tous droits réservés.</p>
+  </footer>
+
+  <!-- EmailJS CDN -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Initialisation EmailJS -->
+<script type="text/javascript">
+  emailjs.init("M1uuUcKv0Lc-cvOJz"); <!-- Remplace TON_USER_ID par ton vrai User ID EmailJS -->
+</script>
+
+<!-- Ton script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
