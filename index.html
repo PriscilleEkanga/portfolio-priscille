@@ -3,73 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priscille Grace - Portfolio</title>
+  <title>Priscille Grâce - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link rel="icon" type="image/png" href="favicon.png" />
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
 
   <!-- Header / Navigation --> 
- <header>
-  <div class="logo">Portfolio</div>
-  
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
-</header>
-
-
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-   <section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Bonjour, je suis <span class="typed"></span></h1>
-    <p>Je transforme vos idées en sites web modernes et intuitifs.</p>
-    <a href="#projects" class="btn">Voir mes projets</a>
-  </div>
-</section>
-
-
+    <div class="hero-content">
+      <h1>Bonjour, je suis <span class="typed"></span></h1>
+      <p>Développeuse Full-Stack en recherche d'alternance — React, Node.js &amp; IA.</p>
+      <a href="#projects" class="btn">Voir mes projets</a>
+    </div>
   </section>
 
   <!-- About / Qui suis-je -->
   <section id="about" class="about">
-  <div class="about-container">
-    <div class="about-img-container">
-      <img src="profil-pf.png" alt="Priscille Grace" class="about-img">
+    <div class="about-container">
+      <div class="about-img-container">
+        <img src="profil3.jpg" alt="Priscille Grace" class="about-img">
+      </div>
+      <div class="about-text">
+        <h2>Qui suis-je ?</h2>
+        <p class="about-paragraph">
+          Je suis Priscille EKANGA, développeuse Full-Stack passionnée par le design et les technologies web. 
+          Actuellement en Bachelor Développeur Web &amp; Web Mobile à l'IMIE Paris, je suis à la recherche d'une 
+          <strong>alternance de 12 mois</strong> en développement web &amp; Intelligence Artificielle à partir de septembre 2026.
+        </p>
+        <p class="about-paragraph" style="margin-top: 12px;">
+          Je conçois des applications dynamiques et modernes, alliant esthétique, ergonomie et performance. 
+          Mes projets mobilisent mes compétences en React, Node.js, MongoDB et Express.js, toujours pensés pour offrir 
+          une expérience utilisateur fluide et intuitive.
+        </p>
+        <a href="CV-Alternance.pdf" download class="btn">Télécharger mon CV</a>
+      </div>
     </div>
-    <div class="about-text">
-      <h2>Qui suis-je ?</h2>
-        <p>Je suis Priscille EKANGA, étudiante en développement web full-stack, passionnée par le design et les technologies web. Je conçois des projets dynamiques et modernes, alliant esthétique, ergonomie et performance.
-          Mon approche consiste à créer des sites intuitifs et responsives, optimisés pour tous les supports et pensés pour offrir une expérience utilisateur fluide.
-          Chaque projet est pour moi l’occasion de mettre en pratique mes compétences en HTML, CSS, JavaScript, React et Node.js, tout en adaptant mes solutions aux besoins spécifiques de chaque client ou projet.
-          Je m’efforce de combiner créativité et rigueur technique pour transformer chaque idée en un site web fonctionnel, performant et unique.</p>
-
-      </div>   
-    
-      <!-- Bouton Télécharger CV -->
-  <a href="CV_stage_Priscille.pdf" download class="btn">Télécharger mon CV</a>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- Skills / Compétences -->
   <section id="skills" class="skills">
@@ -78,98 +69,142 @@
       <div class="skill-card">HTML</div>
       <div class="skill-card">CSS</div>
       <div class="skill-card">JavaScript</div>
+      <div class="skill-card">TypeScript</div>
       <div class="skill-card">React</div>
+      <div class="skill-card">Tailwind CSS</div>
       <div class="skill-card">Node.js</div>
       <div class="skill-card">PHP</div>
       <div class="skill-card">MySQL</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">Docker</div>
+      <div class="skill-card">Git / GitHub</div>
+      <div class="skill-card">Figma</div>
     </div>
   </section>
 
   <!-- Projects / Projets -->
   <section id="projects" class="projects">
-  <h2>Mes projets</h2>
-  <div class="projects-grid">
-    <!-- Projets visibles -->
-    <div class="project-card animate">
-      <a href="https://kak-oil.netlify.app/" target="_blank">
-        <img src="image-kakoil.png" alt="Projet 1">
-        <div class="project-overlay">
-          <h3>Kak'oil</h3>
-          <p>HTML, CSS, JavaScript</p>
-        </div>
-      </a>
-    </div>
-    <div class="project-card animate">
-      <a href="https://booki-hebergement.netlify.app/" target="_blank">
-        <img src="image-booki.png" alt="Projet 2">
-        <div class="project-overlay">
-          <h3>Booki</h3>
-          <p>HTML, CSS, javascript</p>
-        </div>
-      </a>
-    </div>
-    <div class="project-card animate">
-      <a href="https://todolist-priscille.netlify.app/" target="_blank">
-        <img src="image-todo-list.png" alt="Projet 3">
-        <div class="project-overlay">
-          <h3>Todo list</h3>
-          <p>React,JavaScript, PHP</p>
-        </div>
-      </a>
+    <h2>Mes projets</h2>
+    <p class="projects-intro">
+      Chacun de mes projets est né d'un besoin réel, une idée à concrétiser, un problème à résoudre, une expérience utilisateur à améliorer. 
+      De la conception de l'interface jusqu'au déploiement, je prends en charge l'ensemble de la chaîne : design, front-end, back-end et base de données. 
+      Ces réalisations reflètent ma façon de travailler avec curiosité, rigueur et une vraie envie de créer des outils qui ont du sens.
+    </p>
+    <div class="projects-grid">
+
+      <!-- NAPPYBOOKING -->
+      <div class="project-card animate">
+        <a href="https://nappy-booking.vercel.app/" target="_blank">
+          <img src="NappyBooking.png" alt="NappyBooking">
+          <div class="project-overlay">
+            <h3>NappyBooking</h3>
+            <p class="project-description">Application Full-Stack de prise de rendez-vous beauté — coiffeuses, manucures et maquilleuses partout en France.</p>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <a href="https://github.com/PriscilleEkanga/NappyBooking" target="_blank" class="project-github" onclick="event.stopPropagation()">
+              <i class="fab fa-github"></i> Code source
+            </a>
+          </div>
+        </a>
+      </div>
+
+      <!-- KAK'OIL -->
+      <div class="project-card animate">
+        <a href="https://kak-oil.netlify.app/" target="_blank">
+          <img src="image-kakoil.png" alt="Kak'oil">
+          <div class="project-overlay">
+            <h3>Kak'oil</h3>
+            <p class="project-description">Site vitrine responsive pour une marque de cosmétiques naturels.</p>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/PriscilleEkanga/kak-oil" target="_blank" class="project-github" onclick="event.stopPropagation()">
+              <i class="fab fa-github"></i> Code source
+            </a>
+          </div>
+        </a>
+      </div>
+
+      <!-- BOOKI -->
+      <div class="project-card animate">
+        <a href="https://booki-hebergement.netlify.app/" target="_blank">
+          <img src="image-booki.png" alt="Booki">
+          <div class="project-overlay">
+            <h3>Booki</h3>
+            <p class="project-description">Interface de recherche d'hébergements et d'activités touristiques.</p>
+            <div class="project-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://github.com/PriscilleEkanga/Booki" target="_blank" class="project-github" onclick="event.stopPropagation()">
+              <i class="fab fa-github"></i> Code source
+            </a>
+          </div>
+        </a>
+      </div>
+
+      <!-- TODO LIST -->
+      <div class="project-card animate">
+        <a href="https://todolist-priscille.netlify.app/" target="_blank">
+          <img src="image-todo-list.png" alt="Todo list">
+          <div class="project-overlay">
+            <h3>Todo List</h3>
+            <p class="project-description">Application de gestion de tâches avec interface dynamique et persistance des données.</p>
+            <div class="project-stack">
+              <span>React</span><span>JavaScript</span><span>PHP</span>
+            </div>
+            <a href="https://github.com/PriscilleEkanga/todolist-priscille" target="_blank" class="project-github" onclick="event.stopPropagation()">
+              <i class="fab fa-github"></i> Code source
+            </a>
+          </div>
+        </a>
+      </div>
+
     </div>
 
     <!-- Projets supplémentaires cachés -->
-    
-      <!-- ajoute d'autres projets ici -->
+    <div id="more-projects" style="display:none;">
+      <!-- ajoute d'autres projets ici avec le même format project-card -->
     </div>
-  </div>
 
-  <!-- Bouton afficher plus -->
-  <div class="show-more">
-    <button id="show-more-btn" class="btn">Afficher plus de projets</button>
-  </div>
-</section>
-
+    <!-- Bouton afficher plus : affiché seulement si des projets sont présents dans #more-projects -->
+    <div class="show-more" style="display:none;">
+      <button id="show-more-btn" class="btn">Afficher plus de projets</button>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contactez-moi</h2>
     <form id="contact-form">
-  <input type="text" name="name" placeholder="Votre nom" required>
-  <input type="email" name="email" placeholder="Votre email" required>
-  <textarea name="message" placeholder="Votre message" required></textarea>
-  <button type="submit" class="btn">Envoyer</button>
-</form>
-
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
     <div class="socials">
-  <a href="https://www.linkedin.com/in/priscille-ekanga-ab24aa333/" target="_blank">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://github.com/PriscilleEkanga" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://www.instagram.com/priscille__ekanga/" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-</div>
-
+      <a href="https://www.linkedin.com/in/priscille-ekanga-ab24aa333/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/PriscilleEkanga" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/priscille__ekanga/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Priscille Grace. Tous droits réservés.</p>
+    <p>&copy; 2026 Priscille Grâce. Tous droits réservés.</p>
   </footer>
 
-  <!-- EmailJS CDN -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<!-- Initialisation EmailJS -->
-<script type="text/javascript">
-  emailjs.init("M1uuUcKv0Lc-cvOJz"); <!-- Remplace TON_USER_ID par ton vrai User ID EmailJS -->
-</script>
-
-<!-- Ton script.js -->
-<script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("M1uuUcKv0Lc-cvOJz");
+  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
